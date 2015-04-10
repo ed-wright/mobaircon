@@ -1,0 +1,263 @@
+<!doctype html>
+<html class="no-js">
+<head>
+  <meta charset="utf-8">
+  <title>Homepage | Mobile Air Con</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width">
+  <link rel="shortcut icon" href="/favicon.ico">
+  <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+  <!-- build:css(.) styles/vendor.css -->
+  <!-- bower:css -->
+  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+  <!-- endbower -->
+  <!-- endbuild -->
+  <!-- build:css(.tmp) styles/main.css -->
+  <link rel="stylesheet" href="styles/nav.css">
+  <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="styles/toastr.css">
+  <link rel="stylesheet" href="styles/font-awesome.min.css">
+
+  <!-- endbuild -->
+</head>
+<body>
+    <!--[if lt IE 10]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+      <![endif]-->
+      <!--<div class="header">
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#js-navbar-collapse">
+                <i class="fa fa-bars"></i>
+              </button>
+              <a class="navbar-brand" href="#/">MOBAIRCON</a>
+            </div>
+            <div class="collapse navbar-collapse" id="js-navbar-collapse">
+              <ul class="nav navbar-nav navbar-right">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#services">About</a></li>
+                <li><a href="#/">Contact</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>-->
+      <nav class="navbar navbar-static-top navbar-theme-trans" id="navbar">
+    <div class="container">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+          <span class="sr-only">Toggle navigation</span>
+          <i class="fa fa-bars"></i>
+        </button>
+        <a class="navbar-brand" href="#">MOBAIRCON</a>
+      </div>
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#">HOME</a></li>
+          <li><a href="#">SERVICES</a></li>
+          <li><a href="#">ABOUT</a></li>
+          <li><a href="#">CONTACT</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+      <section class="main-section carousel-section" id="home">
+        <div class="carousel-img"></div>
+        <div class="carousel-container">
+          <div class="container">
+            <div class="row">
+              <div class="col-xs-12">
+                <h2>Mobile Air Conditioning</h2>
+                <a class="carousel-button" href="#services">LEARN MORE</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-footer">
+          <div class="container">
+            <div class="row">
+              <div class="col-xs-12">
+                <p class="text-center"><i class="fa fa-phone"></i> 07095739576</p>
+                <p class="text-center"><i class="fa fa-envelope"></i> booking@mobaircon.com</p>
+              </div>
+           </div>
+         </div>
+       </div>
+     </section>
+     <section class="main-section blue" id="services">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12">
+            <div class="section-title">
+              Services
+            </div>
+          </div>
+        </div>
+        <div class="row services-panel">
+          <div class="col-sm-4">
+            
+          </div>
+          <div class="col-sm-4">
+
+           </div>
+          <div class="col-sm-4">
+
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="main-section white" id="services">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12">
+            <div class="section-title">
+              About Us
+            </div>
+          </div>
+        </div>
+        <div class="row services-panel">
+          <div class="col-sm-4">
+            
+          </div>
+          <div class="col-sm-4">
+
+           </div>
+          <div class="col-sm-4">
+
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="main-section blue" id="">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12">
+            <div class="section-title">
+              Contact Us
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-8">
+            <div class="google-maps" id="maps">
+              <i class="fa fa-spinner fa-spin"></i>
+              <script src="https://maps.googleapis.com/maps/api/js"></script>
+              <script> 
+              function initialize() {
+                var mapCanvas = document.getElementById('map-canvas');
+                var mapOptions = {
+                  center: new google.maps.LatLng(53.0252432, -1.4507204),
+                  zoom: 14,
+                  mapTypeId: google.maps.MapTypeId.ROADMAP
+                }
+                var map = new google.maps.Map(mapCanvas, mapOptions)
+                var populationOptions = {
+                  strokeColor: '#FF0000',
+                  strokeOpacity: 0.8,
+                  strokeWeight: 2,
+                  fillColor: '#FF0000',
+                  fillOpacity: 0.35,
+                  map: map,
+                  center: new google.maps.LatLng(53.0252432, -1.4507204),
+                  radius: 1000
+                };
+                var cityCircle = new google.maps.Circle(populationOptions);
+                var marker = new google.maps.Marker({
+                  position: new google.maps.LatLng(53.0252432, -1.4507204),
+                  map: map,
+                  title: '28 Naseby Road'
+                });
+              }
+              google.maps.event.addDomListener(window, 'load', initialize);
+              </script>
+              <div id="map-canvas"></div>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="contact">
+              <legend><i class="fa fa-home"></i> Our office</legend>
+              <address>
+                <strong>MobAirCon</strong><br>
+                28 Naseby Road<br>
+                Belper<br>
+                Derbyshire, DE56 0ER<br>
+                <br>
+                <i class="fa fa-phone"></i> (+44) 07974909666 <br>
+                <i class="fa fa-envelope"></i> booking@mobaircon.com
+              </address>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="footer" id="">
+      <div class="container">
+        <div class="row">
+      <div class="col-xs-12">
+        <ul class="social-icons">
+          <li>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa fa-facebook"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa fa-google-plus"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa fa-instagram"></i></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+        <div class="row">
+          <div class="col-xs-12">
+            <div class="footer-title">
+              <ul class="horizontal-list">
+                <li><a href="#/">MobAirCon</a></li>
+                <li><a href="#/">Website terms</a></li>
+                <li><a href="#/">Privacy policy</a></li>
+                <li><a href="#/">Leave Feedback</a></li>
+              </ul>
+              <p class="footer-copy">© MobAirCon 2015. All rights reserved. Created by <a href="http://bitconcepts.co.uk/">Bitconcepts</a>.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+
+    <script>
+    (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+      function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+    e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+    e.src='//www.google-analytics.com/analytics.js';
+    r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+    ga('create','UA-XXXXX-X');ga('send','pageview');
+    </script>
+    <!-- build:js(.) scripts/vendor.js -->
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/bootstrap/js/affix.js"></script>
+    <script src="bower_components/bootstrap/js/alert.js"></script>
+    <script src="bower_components/bootstrap/js/dropdown.js"></script>
+    <script src="bower_components/bootstrap/js/tooltip.js"></script>
+    <script src="bower_components/bootstrap/js/modal.js"></script>
+    <script src="bower_components/bootstrap/js/transition.js"></script>
+    <script src="bower_components/bootstrap/js/button.js"></script>
+    <script src="bower_components/bootstrap/js/popover.js"></script>
+    <script src="bower_components/bootstrap/js/carousel.js"></script>
+    <script src="bower_components/bootstrap/js/scrollspy.js"></script>
+    <script src="bower_components/bootstrap/js/collapse.js"></script>
+    <script src="bower_components/bootstrap/js/tab.js"></script>
+    <!-- endbuild -->
+    <!-- build:js({app,.tmp}) scripts/main.js -->
+    <script src="scripts/toastr.js"></script>
+    <script src="scripts/main.js"></script>
+
+    
+    <!-- endbuild -->
+  </body>
+  </html>

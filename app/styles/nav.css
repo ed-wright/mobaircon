@@ -1,0 +1,235 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto:500,300,700,400);
+/*.navbar {
+  margin: 0;
+}
+.navbar-toggle {
+  margin: 0;
+  padding: 6px 20px;
+  height: 50px;
+  border: 0;
+  font-size: 28px;
+  color: #fff;
+  border-radius: 0;
+}
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+  color: #ddd;
+  background-color: transparent;
+}
+
+.navbar-default {
+	-webkit-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+	background-color: rgba(0,0,0,0.5);
+	border: none;
+}
+.navbar-default .navbar-brand {
+	color: #fff;
+	font-family: 'Roboto', sans-serif;
+		font-weight: 700;
+	font-size: 24px;
+}
+.navbar-default .navbar-brand:hover {
+	color: #ddd;
+}
+.navbar-default .navbar-nav > li > a {
+	color: #fff;
+	font-family: 'Roboto', sans-serif;
+		font-weight: 500;
+	font-size: 20px;
+}
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+	color: #ddd;
+	background-color: rgba(0,0,0,0.5);
+}
+.navbar-collapse {
+	box-shadow: none;
+	border: none;
+}
+@media (max-width: 768px) {
+	.navbar-nav {
+		margin: 0 -15px;
+	}
+} */
+
+/* Navbar Dark Theme */
+
+.navbar-theme-dark {
+  background-color: transparent;
+  border-color: transparent;
+}
+.navbar-theme-dark .navbar-toggle {
+  border-color: transparent;
+  color: #fff;
+  font-size: 24px;
+  padding: 0;
+}
+.navbar-theme-dark .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+  background-color: transparent;
+}
+.navbar-theme-dark .navbar-brand {
+  color: #fff;
+  background-color: transparent;
+  font-size: 24px;
+  font-weight: 700;
+}
+.navbar-theme-dark .navbar-brand:hover, .navbar-theme-dark .navbar-brand:focus {
+  color: rgba(255,255,255,0.7);
+}
+.navbar-theme-dark .navbar-nav > .active > a {
+  color: #fff;
+  background-color: transparent;
+}
+.navbar-theme-dark .navbar-nav > .active > a:hover, .navbar-theme-dark .navbar-nav > .active > a:focus {
+  color: rgba(255,255,255,0.7);
+  background-color: transparent;
+}
+.navbar-theme-dark .navbar-nav > li > a {
+  color: #fff;
+  background-color: transparent;
+  font-weight: 700;
+}
+.navbar-theme-dark .navbar-nav > li > a:hover, .navbar-theme-dark .navbar-nav > li > a:focus {
+  color: rgba(255,255,255,0.7);
+  background-color: transparent;
+}
+.navbar-theme-dark .navbar-nav > .open > a, .navbar-theme-dark .navbar-nav > .open > a:focus {
+  color: #fff;
+  background-color: transparent;
+}
+.navbar-theme-dark .navbar-nav > .open > a:hover {
+  color: rgba(255,255,255,0.7);
+  background-color: transparent;
+}
+.navbar-theme-dark .navbar-collapse, .navbar-theme-dark .navbar-form {
+  border: none;
+  box-shadow: none;
+}
+
+/* Navbar Light Theme */
+
+.navbar-theme-light {
+  background-color: #fff;
+  border-color: transparent;
+}
+.navbar-theme-light .navbar-toggle {
+  border-color: transparent;
+  color: #888;
+  font-size: 24px;
+  padding: 0;
+}
+.navbar-theme-light .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+  background-color: transparent;
+}
+.navbar-theme-light .navbar-brand {
+  color: #888;
+  background-color: transparent;
+  font-size: 24px;
+  font-weight: 700;
+}
+.navbar-theme-light .navbar-brand:hover, .navbar-theme-light .navbar-brand:focus {
+  color: rgba(0,0,0,0.7);
+}
+.navbar-theme-light .navbar-nav > .active > a {
+  color: #888;
+  background-color: transparent;
+}
+.navbar-theme-light .navbar-nav > .active > a:hover, .navbar-theme-light .navbar-nav > .active > a:focus {
+  color: rgba(0,0,0,0.7);
+  background-color: transparent;
+}
+.navbar-theme-light .navbar-nav > li > a {
+  color: #888;
+  background-color: transparent;
+  font-weight: 700;
+}
+.navbar-theme-light .navbar-nav > li > a:hover, .navbar-theme-light .navbar-nav > li > a:focus {
+  color: rgba(0,0,0,0.7);
+  background-color: transparent;
+}
+.navbar-theme-light .navbar-nav > .open > a, .navbar-theme-light .navbar-nav > .open > a:focus {
+  color: #888;
+  background-color: transparent;
+}
+.navbar-theme-light .navbar-nav > .open > a:hover {
+  color: rgba(0,0,0,0.7);
+  background-color: transparent;
+}
+.navbar-theme-light .navbar-collapse, .navbar-theme-light .navbar-form {
+  border: none;
+  box-shadow: none;
+}
+
+
+/* Navbar Translucent Theme */
+
+.navbar-theme-trans {
+  background-color: rgba(0,0,0,0.5);
+  border-color: transparent;
+}
+.navbar-theme-trans .navbar-toggle {
+  border-color: transparent;
+  color: #fff;
+  font-size: 24px;
+  padding: 0;
+}
+.navbar-theme-trans .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+  background-color: transparent;
+}
+.navbar-theme-trans .navbar-brand {
+  color: #fff;
+  background-color: transparent;
+  font-size: 24px;
+  font-weight: 700;
+}
+.navbar-theme-trans .navbar-brand:hover, .navbar-theme-trans .navbar-brand:focus {
+  color: rgba(255,255,255,0.7);
+}
+.navbar-theme-trans .navbar-nav > .active > a {
+  color: #fff;
+  background-color: transparent;
+}
+.navbar-theme-trans .navbar-nav > .active > a:hover, .navbar-theme-trans .navbar-nav > .active > a:focus {
+  color: rgba(255,255,255,0.7);
+  background-color: transparent;
+}
+.navbar-theme-trans .navbar-nav > li > a {
+  color: #fff;
+  background-color: transparent;
+  font-weight: 700;
+}
+.navbar-theme-trans .navbar-nav > li > a:hover, .navbar-theme-trans .navbar-nav > li > a:focus {
+  color: rgba(255,255,255,0.7);
+  background-color: transparent;
+}
+.navbar-theme-trans .navbar-nav > .open > a, .navbar-theme-trans .navbar-nav > .open > a:focus {
+  color: #fff;
+  background-color: transparent;
+}
+.navbar-theme-trans .navbar-nav > .open > a:hover {
+  color: rgba(255,255,255,0.7);
+  background-color: transparent;
+}
+.navbar-theme-trans .navbar-collapse, .navbar-theme-trans .navbar-form {
+  border: none;
+  box-shadow: none;
+}
+
+
+/* Navbar Format Changes */
+
+.navbar-nav.navbar-right:last-child {
+    margin-right: 0;
+  }
+@media (min-width: 768px){
+  .navbar {
+    padding: 15px 20px 15px 20px;
+  }
+  
+}
+.navbar {
+  margin-bottom: 0;
+  border: none;
+  font-family: 'Roboto', sans-serif;
+   -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
