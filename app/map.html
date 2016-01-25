@@ -1,31 +1,80 @@
-    <script src="https://maps.googleapis.com/maps/api/js"></script>
-    <script> 
-      function initialize() {
-        var mapCanvas = document.getElementById('map-canvas');
-        var mapOptions = {
-          center: new google.maps.LatLng(53.0252432, -1.4507204),
-          zoom: 14,
-          mapTypeId: google.maps.MapTypeId.ROADMAP
-        }
-        var map = new google.maps.Map(mapCanvas, mapOptions)
-        var populationOptions = {
-          strokeColor: '#FF0000',
-          strokeOpacity: 0.8,
-          strokeWeight: 2,
-          fillColor: '#FF0000',
-          fillOpacity: 0.35,
-          map: map,
-          center: new google.maps.LatLng(53.0252432, -1.4507204),
-          radius: 1000
-        };
-        var cityCircle = new google.maps.Circle(populationOptions);
-        var marker = new google.maps.Marker({
-          position: new google.maps.LatLng(53.0252432, -1.4507204),
-          map: map,
-          title: '28 Naseby Road'
-        });
-      }
-      google.maps.event.addDomListener(window, 'load', initialize);
-    </script>
+<!doctype html>
+<html>
+<body>
+	<style>
+	html, body {
+		width: 100%;
+		height: 100%;
+		margin: 0;
+		padding: 0;
+	}
+#map-canvas {
+  margin: 0 auto;
+  width: 100% !important;
+  height: 100% !important;
+}
+	</style>
+
+	<script src="https://maps.googleapis.com/maps/api/js"></script>
+<div id="map-canvas"></div>
+
+	<!-- build:js(.) scripts/vendor.js -->
+  <script src="bower_components/jquery/dist/jquery.js"></script>
+  <script src="bower_components/bootstrap/js/affix.js"></script>
+  <script src="bower_components/bootstrap/js/alert.js"></script>
+  <script src="bower_components/bootstrap/js/dropdown.js"></script>
+  <script src="bower_components/bootstrap/js/tooltip.js"></script>
+  <script src="bower_components/bootstrap/js/modal.js"></script>
+  <script src="bower_components/bootstrap/js/transition.js"></script>
+  <script src="bower_components/bootstrap/js/button.js"></script>
+  <script src="bower_components/bootstrap/js/popover.js"></script>
+  <script src="bower_components/bootstrap/js/carousel.js"></script>
+  <script src="bower_components/bootstrap/js/scrollspy.js"></script>
+  <script src="bower_components/bootstrap/js/collapse.js"></script>
+  <script src="bower_components/bootstrap/js/tab.js"></script>
+  <!-- endbuild -->
+  	<script>
+	var citymap = {};
+citymap.belper = {
+  center: new google.maps.LatLng(53.0476367,-1.4983462),
+  radius: 50000
+};
+citymap.manchester = {
+  center: new google.maps.LatLng(53.4310903,-2.1696828),
+  radius: 14000
+};
+var cityCircle;
+
+function googleMapsLoad() {
+  var mapCanvas = document.getElementById('map-canvas');
+  var mapOptions = {
+    center: new google.maps.LatLng(53.0252432, -1.7335088),
+    zoom: 9,
+    mapTypeId: google.maps.MapTypeId.ROADMAP,
+    minZoom: 9
+  }
+  var map = new google.maps.Map(mapCanvas, mapOptions)
   
-    <div id="map-canvas"></div>
+for (var city in citymap) {
+  var populationOptions = {
+    strokeColor: '#FF0000',
+    strokeOpacity: 0.8,
+    strokeWeight: 0,
+    fillColor: '#FF0000',
+    fillOpacity: 0.30,
+    map: map,
+    center: citymap[city].center,
+    radius: citymap[city].radius
+  };
+  var cityCircle = new google.maps.Circle(populationOptions);
+}
+}
+//run Functions
+$(document).ready(function(){    
+	googleMapsLoad();
+});
+
+
+	</script>
+</body>
+</html>

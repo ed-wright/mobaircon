@@ -1,0 +1,62 @@
+.combi-footer {
+background-color: #222;
+width: 100%;
+padding: 20px 0;
+margin: 0;
+font-family: 'Roboto', sans-serif;
+font-weight: 700;
+color: #fff;
+}
+
+
+.footer-list {
+list-style-type: none;
+padding: 0;
+margin: 10px 0;
+}
+.footer-list > li {
+display: inline;
+padding: 5px 10px 0 0;
+
+}
+.footer-list > li > a {
+font-size: 14px;
+color: #fff;
+text-decoration: none;
+}
+.footer-list > li > a:hover {
+color: #ddd;
+}
+.footer-list > li:first-child > a {
+font-size: 20px;
+}
+
+
+.social-icons {
+list-style-type: none;
+margin: 0;
+padding: 15px 0 0 0;
+text-align: center;
+}
+.social-icons > li  {
+display: inline-block;
+}
+.social-icons > li > a {
+height: 45px;
+width: 45px;
+display: inline-block;
+font-size: 26px;
+border-radius: 50%;
+margin: 0 4px;
+text-align: center;
+padding-top: 4px;
+
+background-color: #fff;
+color: #222;
+-webkit-transition: all 0.3s ease-in-out;
+transition: all 0.3s ease-in-out;
+}
+.social-icons > li > a:hover {
+background-color: #ddd;
+color: #222;
+}

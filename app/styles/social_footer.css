@@ -1,0 +1,73 @@
+/* Footer Dark Theme */
+
+.footer-theme-dark {
+  background-color: #222;
+  color: #fff;
+}
+.footer-theme-dark .social-icons > li > a {
+  border-color: #fff;
+  background-color: transparent;
+  color: #fff;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.footer-theme-dark .social-icons > li > a:hover {
+  background-color: #fff;
+  color: #222;
+}
+
+/* Footer Light Theme */
+
+.footer-theme-light {
+  background-color: #fff;
+  color: #888;
+}
+.footer-theme-light .social-icons > li > a {
+  border-color: #888;
+  background-color: transparent;
+  color: #888;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.footer-theme-light .social-icons > li > a:hover {
+  background-color: #888;
+  color: #fff;
+}
+
+/* Footer Format Changes */
+
+.social-footer {
+  font-family: 'Roboto', sans-serif;
+  width: 100%;
+  padding: 60px 0;
+  bottom: 0;
+  text-align: center;
+  /* Remove Transiton for production */
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.footer-branding {
+  padding: 0 0 40px 0;
+  font-weight: 700;
+  font-size: 18px;
+}
+.social-icons {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+.social-icons > li  {
+  display: inline-block;
+}
+.social-icons > li > a {
+  height: 45px;
+  width: 45px;
+  display: inline-block;
+  font-size: 18px;
+  border: 2px solid;
+  border-radius: 50%;
+  margin: 0 4px;
+  text-align: center;
+  padding-top: 9px;
+}
